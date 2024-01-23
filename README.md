@@ -17,8 +17,8 @@ This 3-column preview card component challenge solution presented here showcases
 
 ### Screenshot
 
-- Desktop View Screenshot: ![Desktop View:](/images/desktop-preview-screenshot.png)
-- Mobile View Screenshot: ![Mobile View:](/images/mobile-preview-screenshot.png)
+- Desktop View Screenshot: ![Desktop View:](/assets/images/desktop-preview-screenshot.png)
+- Mobile View Screenshot: ![Mobile View:](/assets/images/mobile-preview-screenshot.png)
 
 ### Links
 
