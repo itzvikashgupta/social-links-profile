@@ -1,0 +1,183 @@
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --clr-primary-400: hsl(75, 94%, 57%);
+  --clr-primary-500: hsl(75, 94%, 67%);
+  --clr-primary-600: hsl(75, 94%, 85%);
+
+  --clr-neutral-800: hsl(0, 0%, 8%);
+  --clr-neutral-400: hsl(0, 0%, 12%);
+  --clr-neutral-200: hsl(0, 0%, 20%);
+  --clr-neutral-100: hsl(0, 0%, 100%);
+
+  --fs-100: 1.4rem;
+  --fs-150: 1.6rem;
+  --fs-200: 2rem;
+  --fs-250: 2.4rem;
+  --fs-300: 3rem;
+
+  --fw-regular: 400;
+  --fw-bold: 600;
+  --fw-black: 700;
+
+  --ff-base: "Inter", sans-serif;
+}
+
+.wrapper {
+  max-width: 144rem;
+  padding: 2rem;
+}
+
+/***** css reset Section *****/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+textarea,
+select,
+span {
+  font: inherit;
+}
+
+p,
+span,
+button,
+h1,
+h2,
+h3 {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: 1.5;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/***** End css reset Section *****/
+
+/***** actual styling Section *****/
+.flex-flow {
+  display: flex;
+}
+
+.grid-flow {
+  display: grid;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+body {
+  font-family: var(--ff-base);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-100);
+  color: var(--clr-neutral-100);
+  background-color: var(--clr-neutral-800);
+
+  display: grid;
+  place-items: center;
+  max-width: calc(100dvw-2rem);
+  min-height: 100vh;
+}
+
+.social-profile {
+  background-color: var(--clr-neutral-400);
+  padding: 4.2rem 4rem 4rem;
+  text-align: center;
+  border-radius: 1rem;
+  gap: 2rem;
+}
+
+.social-profile--header {
+  gap: 2.3rem;
+  padding-inline: 1.5rem;
+
+  & .user-profile--pic {
+    width: 9rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-inline: auto;
+  }
+
+  & .user-profile--pic img {
+    width: 100%;
+  }
+
+  & .user-name {
+    font-size: var(--fs-250);
+    font-weight: var(--fw-bold);
+  }
+
+  & .user-location {
+    font-weight: var(--fw-bold);
+    margin-top: 0.3rem;
+    color: var(--clr-primary-500);
+  }
+}
+
+.social-profile--links ul {
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+
+  & li a {
+    display: block;
+    background-color: var(--clr-neutral-200);
+    padding-block: 1.2rem;
+    border-radius: 0.8rem;
+    font-weight: var(--fw-black);
+    transition: all 0.25s linear;
+  }
+
+  & a:hover {
+    background-color: var(--clr-primary-400);
+    color: var(--clr-neutral-800);
+    cursor: pointer;
+  }
+
+  & a:active {
+    background-color: var(--clr-primary-600);
+  }
+}
+
+/***** media queries Section *****/
+@media (width<=425px) {
+}
+/***** End media queries Section *****/
