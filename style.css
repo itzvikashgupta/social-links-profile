@@ -173,7 +173,7 @@ body {
   }
 
   & a:focus {
-    border: .1rem solid var(--clr-primary-400);
+    border: 0.1rem solid var(--clr-primary-400);
     outline: none;
   }
 
@@ -183,6 +183,4 @@ body {
 }
 
 /***** media queries Section *****/
-@media (width<=425px) {
-}
 /***** End media queries Section *****/
