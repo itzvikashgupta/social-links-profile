@@ -173,8 +173,7 @@ body {
   }
 
   & a:focus {
-    border: 0.1rem solid var(--clr-primary-400);
-    outline: none;
+    outline: 0.1rem solid var(--clr-primary-400);
   }
 
   & a:active {
