@@ -172,6 +172,11 @@ body {
     cursor: pointer;
   }
 
+  & a:focus {
+    border: .1rem solid var(--clr-primary-400);
+    outline: none;
+  }
+
   & a:active {
     background-color: var(--clr-primary-600);
   }
