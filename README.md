@@ -13,7 +13,7 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 
 ## Overview
 
-This 3-column preview card component challenge solution presented here showcases a sleek and responsive design.
+This Social links profile challenge solution presented here showcases a sleek and responsive design.
 
 ### Screenshot
 
